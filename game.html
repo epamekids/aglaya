@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript">
+      var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
+          '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',];
+      var color = '#fff000';
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+
+    </script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var i = $.get("http://aws.random.cat/meow");
+        function print(){
+            var i = $.get("http://aws.random.cat/meow");
+        var game = $("<div>", {
+            "class": "cat",
+            "id" : "image" + i,
+            "style" : "margin-top:" + getRandomInt(10 ,500) + "px;margin-right" + getRandomInt(0 , 800) + "px;"
+          }).html(i).click(function(){
+            $(this).remove()
+          })
+          $("body").append(game)
+          //console.log(i)
+          setTimeout(print , 20)
+        }
+        print()})
+        function getRandomInt(min, max){
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min)) + min;}
+
+    </script>
+    <script type="text/javascript">
+      //var colorArray = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99', '#00B3E6',
+      //    '#E6B333', '#3366E6', '#999966', '#99FF99', '#B34D4D',];
+      var color = '#fff000';
+    </script>
+    <script type="text/javascript">
+    //  function catLoader(){
+    	//	$.get("http://aws.random.cat/meow").done(  $(document).ready(function(){
+
+
+    </script>
+    <script type="text/javascript">
+      alert("you game will be green")
+
+
+    </script>
+    <style media="screen">
+      .cat{
+        border: 5px solid blue;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        color: red;
+        background : green;
+    }
+
+      body{
+        background:
+      }
+    </style>
+    <script type="text/javascript">
+      var color = colorArray[Math.floor(Math.random()*colorArray.length)];
+
+
+    </script>
+  </head>
+  <body>
+
+    <div class="cat" >
+
+    </div>
+  </body>
+</html>
